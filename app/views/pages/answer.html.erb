@@ -1,8 +1,15 @@
-<h1>Answering bot</h1>
-<p>I answer all your questions</p>
+<div class=whole_page>
+  <div class=title_block>
+    <h1>Answering bot</h1>
+    <p>I answer all your questions</p>
+  </div>
 
-<p><%= @question.capitalize %></p>
+  <div class=second_part>
+    <div class=answer_block>
+      <h3 class=your_question><%= @question.capitalize %></h3>
+      <p class=your_answer><%= @answer %></p>
+    </div>
 
-<p><%= @answer %></p>
-
-<%= link_to "Ask a new question", ask_path %>
+  <%= link_to "Ask a new question", ask_path %>
+  </div>
+</div>
